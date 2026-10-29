@@ -88,17 +88,8 @@
 'use strict';
 (() => {
  document.getElementById('preview-warning').hidden = true;
- const KEY='hanjagyeol.words.v1', SETKEY='hanjagyeol.settings.v1', HIDDENKEY='hanjagyeol.hidden.v1';
- const SEED=[
-  ['乖離','괴리','서로 어긋나거나 동떨어짐','乖:어그러질 괴 | 離:떠날 리','이상과 현실의 괴리'],
-  ['歸結','귀결','어떤 과정이나 논의가 일정한 결론에 이름','歸:돌아갈 귀 | 結:맺을 결','논의가 하나의 결론으로 귀결되다'],
-  ['演繹','연역','일반적인 원리에서 개별적인 결론을 이끌어 냄','演:펼 연 | 繹:풀 역','전제로부터 결론을 연역하다'],
-  ['歸納','귀납','개별 사례에서 일반적인 원리나 결론을 이끌어 냄','歸:돌아갈 귀 | 納:들일 납','관찰 결과를 귀납하다'],
-  ['現象','현상','감각이나 의식에 나타나는 사물의 모습 또는 사건','現:나타날 현 | 象:모양 상','자연 현상을 관찰하다'],
-  ['本質','본질','어떤 대상을 그 대상이게 하는 근본적인 성질','本:근본 본 | 質:바탕 질','문제의 본질을 파악하다'],
-  ['認識','인식','사물을 분별하고 이해함','認:알 인 | 識:알 식','자신의 한계를 인식하다'],
-  ['命題','명제','참 또는 거짓을 판정할 수 있는 진술 내용','命:목숨 명 | 題:제목 제','주어진 명제의 참과 거짓']
- ];
+ const KEY='hanjagyeol.words.v1', SETKEY='hanjagyeol.settings.v1', HIDDENKEY='hanjagyeol.hidden.v1', EXAMPLES_REMOVED_KEY='hanjagyeol.examplesRemoved.week9.v1';
+ const SEED=[];
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
  const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const uid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():('w'+Date.now().toString(36)+Math.random().toString(36).slice(2));
@@ -126,6 +117,15 @@
    if(!response.ok)throw Error('HTTP '+response.status);
    const data=await response.json();
    if(data.version!==1||!Array.isArray(data.words))throw Error('데이터 형식 오류');
+   // Remove the eight bundled sample cards once, without deleting personal cards.
+   let removed=0;
+   if(Array.isArray(data.removeOnce)&&!safeStorage('get',EXAMPLES_REMOVED_KEY)){
+    const deprecated=new Set(data.removeOnce.filter(x=>x&&x.hanja&&x.reading).map(wordKey));
+    const before=cards.length;
+    cards=cards.filter(w=>!deprecated.has(wordKey(w)));
+    removed=before-cards.length;
+    safeStorage('set',EXAMPLES_REMOVED_KEY,'1');
+   }
    const existing=new Set(cards.map(wordKey));
    let added=0;
    for(const entry of data.words){
@@ -135,9 +135,9 @@
     cards.push(make([w.hanja,w.reading,w.meaning,w.components,w.example]));
     existing.add(key);added++;
    }
-   if(added){persist();renderAll()}
-   $('#sync-status').textContent='마지막 확인 '+new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'})+(added?' · 새 단어 '+added+'개':' · 최신 상태');
-   if(manual)showToast(added?added+'개 추가했어':'이미 최신 단어장이야');
+   if(added||removed){persist();renderAll()}
+   $('#sync-status').textContent='마지막 확인 '+new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'})+(added?' · 새 단어 '+added+'개':' · 최신 상태')+(removed?' · 예시 '+removed+'개 삭제':'');
+   if(manual)showToast((added||removed)?'추가 '+added+'개 · 예시 삭제 '+removed+'개':'이미 최신 단어장이야');
   })().catch(()=>{$('#sync-status').textContent='연결 실패 · 저장된 단어장 사용 중';if(manual)showToast('인터넷 연결 후 다시 확인해 줘')}).finally(()=>{pendingSync=null});
   return pendingSync;
  }
