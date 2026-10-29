@@ -1,62 +1,465 @@
 {
   "version": 1,
-  "description": "한자결 공용 단어장. 개인 학습 기록은 각 기기에만 저장됩니다.",
+  "title": "한국의 한자와 한자어 — 9주차",
+  "description": "9주차 1·2차시 교재의 독립된 한자어 및 한자만 수록. 뜻은 학습용 풀이로 보충.",
   "words": [
     {
+      "hanja": "過去",
+      "reading": "과거",
+      "meaning": "지나간 때 또는 이미 지나간 일",
+      "components": "過:지날 과 | 去:갈 거",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "經過",
+      "reading": "경과",
+      "meaning": "시간이 흘러가거나 일이 진행되어 온 과정",
+      "components": "經:지날 경 | 過:지날 과",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "通過",
+      "reading": "통과",
+      "meaning": "어떤 곳이나 기준을 지나거나 거침",
+      "components": "通:통할 통 | 過:지날 과",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "過誤",
+      "reading": "과오",
+      "meaning": "잘못이나 실수",
+      "components": "過:허물 과 | 誤:그르칠 오",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "過失",
+      "reading": "과실",
+      "meaning": "부주의나 잘못으로 저지른 실수",
+      "components": "過:허물 과 | 失:잃을 실",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "功過",
+      "reading": "공과",
+      "meaning": "공로와 잘못",
+      "components": "功:공 공 | 過:허물 과",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "改善",
+      "reading": "개선",
+      "meaning": "잘못되거나 부족한 점을 고쳐 더 좋게 함",
+      "components": "改:고칠 개 | 善:착할 선",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "改革",
+      "reading": "개혁",
+      "meaning": "제도나 조직 등을 고쳐 새롭게 함",
+      "components": "改:고칠 개 | 革:가죽 혁",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "悔改",
+      "reading": "회개",
+      "meaning": "자신의 잘못을 뉘우치고 고침",
+      "components": "悔:뉘우칠 회 | 改:고칠 개",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "知識",
+      "reading": "지식",
+      "meaning": "배우거나 경험하여 알게 된 내용",
+      "components": "知:알 지 | 識:알 식",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "知覺",
+      "reading": "지각",
+      "meaning": "감각이나 의식으로 대상을 알아차림",
+      "components": "知:알 지 | 覺:깨달을 각",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "認知",
+      "reading": "인지",
+      "meaning": "어떤 사실이나 대상을 알아차리고 이해함",
+      "components": "認:알 인 | 知:알 지",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "周知",
+      "reading": "주지",
+      "meaning": "여러 사람에게 널리 알려짐 또는 널리 알림",
+      "components": "周:두루 주 | 知:알 지",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "無知",
+      "reading": "무지",
+      "meaning": "아는 것이 없음",
+      "components": "無:없을 무 | 知:알 지",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "未知",
+      "reading": "미지",
+      "meaning": "아직 알지 못함",
+      "components": "未:아닐 미 | 知:알 지",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "安分知足",
+      "reading": "안분지족",
+      "meaning": "자신의 처지에 만족하며 분수를 지킴",
+      "components": "安:편안할 안 | 分:나눌 분 | 知:알 지 | 足:발 족",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "知行合一",
+      "reading": "지행합일",
+      "meaning": "앎과 실천은 서로 분리될 수 없고 하나가 되어야 한다는 생각",
+      "components": "知:알 지 | 行:다닐 행 | 合:합할 합 | 一:한 일",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "知彼知己",
+      "reading": "지피지기",
+      "meaning": "상대와 자신을 모두 잘 앎",
+      "components": "知:알 지 | 彼:저 피 | 知:알 지 | 己:몸 기",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "疲困",
+      "reading": "피곤",
+      "meaning": "몸이나 마음이 지쳐 힘든 상태",
+      "components": "疲:피곤할 피 | 困:곤할 곤",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "困難",
+      "reading": "곤란",
+      "meaning": "일이 어렵고 난처함",
+      "components": "困:곤할 곤 | 難:어려울 난",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "困窮",
+      "reading": "곤궁",
+      "meaning": "살림이 몹시 가난하거나 처지가 어려움",
+      "components": "困:곤할 곤 | 窮:다할 궁",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "管鮑之交",
+      "reading": "관포지교",
+      "meaning": "관중과 포숙아처럼 서로 깊이 이해하는 두터운 우정",
+      "components": "管:대롱 관 | 鮑:절인 생선 포 | 之:갈 지 | 交:사귈 교",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "過",
+      "reading": "과",
+      "meaning": "지나다 또는 잘못·허물",
+      "components": "過:지날 과·허물 과",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "改",
+      "reading": "개",
+      "meaning": "고치다",
+      "components": "改:고칠 개",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "知",
+      "reading": "지",
+      "meaning": "알다",
+      "components": "知:알 지",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "困",
+      "reading": "곤",
+      "meaning": "곤하거나 괴롭고 가난하다",
+      "components": "困:곤할 곤",
+      "example": "",
+      "lesson": "9주차 1차시"
+    },
+    {
+      "hanja": "孝誠",
+      "reading": "효성",
+      "meaning": "부모를 정성껏 섬기는 마음",
+      "components": "孝:효도 효 | 誠:정성 성",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "父慈子孝",
+      "reading": "부자자효",
+      "meaning": "아버지는 자애롭고 자식은 효도함",
+      "components": "父:아비 부 | 慈:사랑할 자 | 子:아들 자 | 孝:효도 효",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "反哺之孝",
+      "reading": "반포지효",
+      "meaning": "자식이 자란 뒤 부모의 은혜에 보답하는 효도",
+      "components": "反:돌이킬 반 | 哺:먹일 포 | 之:갈 지 | 孝:효도 효",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "思考",
+      "reading": "사고",
+      "meaning": "생각하고 판단함",
+      "components": "思:생각할 사 | 考:생각할 고",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "考慮",
+      "reading": "고려",
+      "meaning": "여러 사정을 헤아려 깊이 생각함",
+      "components": "考:생각할 고 | 慮:생각할 려",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "熟考",
+      "reading": "숙고",
+      "meaning": "충분히 깊게 생각함",
+      "components": "熟:익을 숙 | 考:생각할 고",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "謹慎",
+      "reading": "근신",
+      "meaning": "말과 행동을 삼가고 조심함",
+      "components": "謹:삼갈 근 | 慎:삼갈 신",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "謹呈",
+      "reading": "근정",
+      "meaning": "삼가 올림 또는 정중하게 드림",
+      "components": "謹:삼갈 근 | 呈:드릴 정",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "謹賀新年",
+      "reading": "근하신년",
+      "meaning": "삼가 새해를 축하한다는 인사",
+      "components": "謹:삼갈 근 | 賀:하례할 하 | 新:새 신 | 年:해 년",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "勤勉",
+      "reading": "근면",
+      "meaning": "부지런하고 성실함",
+      "components": "勤:부지런할 근 | 勉:힘쓸 면",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "勤勞",
+      "reading": "근로",
+      "meaning": "부지런히 일함",
+      "components": "勤:부지런할 근 | 勞:일할 로",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "勤務",
+      "reading": "근무",
+      "meaning": "직장이나 맡은 자리에서 일을 함",
+      "components": "勤:부지런할 근 | 務:힘쓸 무",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "恭敬",
+      "reading": "공경",
+      "meaning": "공손하고 존중하는 태도로 대함",
+      "components": "恭:공손할 공 | 敬:공경할 경",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "尊敬",
+      "reading": "존경",
+      "meaning": "상대의 인격이나 가치 등을 높이 받듦",
+      "components": "尊:높을 존 | 敬:공경할 경",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "敬畏",
+      "reading": "경외",
+      "meaning": "공경하면서도 두려워함",
+      "components": "敬:공경할 경 | 畏:두려워할 외",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "警戒",
+      "reading": "경계",
+      "meaning": "위험이나 잘못이 없도록 미리 조심함",
+      "components": "警:경계할 경 | 戒:경계할 계",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "警覺",
+      "reading": "경각",
+      "meaning": "경계하여 정신을 차리고 깨달음",
+      "components": "警:경계할 경 | 覺:깨달을 각",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "警察",
+      "reading": "경찰",
+      "meaning": "사회 질서와 국민의 안전을 유지하는 기관이나 공무원",
+      "components": "警:경계할 경 | 察:살필 찰",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "孝",
+      "reading": "효",
+      "meaning": "부모를 섬기고 공경함",
+      "components": "孝:효도 효",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "考",
+      "reading": "고",
+      "meaning": "생각하거나 헤아림",
+      "components": "考:생각할 고",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "耆",
+      "reading": "구",
+      "meaning": "나이가 많은 사람이나 늙음",
+      "components": "耆:늙을 구",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "謹",
+      "reading": "근",
+      "meaning": "삼가고 조심함",
+      "components": "謹:삼갈 근",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "僅",
+      "reading": "근",
+      "meaning": "겨우, 간신히",
+      "components": "僅:겨우 근",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "勤",
+      "reading": "근",
+      "meaning": "부지런히 힘씀",
+      "components": "勤:부지런할 근",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "敬",
+      "reading": "경",
+      "meaning": "공경함",
+      "components": "敬:공경할 경",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "警",
+      "reading": "경",
+      "meaning": "경계하여 조심함",
+      "components": "警:경계할 경",
+      "example": "",
+      "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "驚",
+      "reading": "경",
+      "meaning": "놀람",
+      "components": "驚:놀랄 경",
+      "example": "",
+      "lesson": "9주차 2차시"
+    }
+  ],
+  "removeOnce": [
+    {
       "hanja": "乖離",
-      "reading": "괴리",
-      "meaning": "서로 어긋나거나 동떨어짐",
-      "components": "乖:어그러질 괴 | 離:떠날 리",
-      "example": "이상과 현실의 괴리"
+      "reading": "괴리"
     },
     {
       "hanja": "歸結",
-      "reading": "귀결",
-      "meaning": "어떤 과정이나 논의가 일정한 결론에 이름",
-      "components": "歸:돌아갈 귀 | 結:맺을 결",
-      "example": "논의가 하나의 결론으로 귀결되다"
+      "reading": "귀결"
     },
     {
       "hanja": "演繹",
-      "reading": "연역",
-      "meaning": "일반적인 원리에서 개별적인 결론을 이끌어 냄",
-      "components": "演:펼 연 | 繹:풀 역",
-      "example": "전제로부터 결론을 연역하다"
+      "reading": "연역"
     },
     {
       "hanja": "歸納",
-      "reading": "귀납",
-      "meaning": "개별 사례에서 일반적인 원리나 결론을 이끌어 냄",
-      "components": "歸:돌아갈 귀 | 納:들일 납",
-      "example": "관찰 결과를 귀납하다"
+      "reading": "귀납"
     },
     {
       "hanja": "現象",
-      "reading": "현상",
-      "meaning": "감각이나 의식에 나타나는 사물의 모습 또는 사건",
-      "components": "現:나타날 현 | 象:모양 상",
-      "example": "자연 현상을 관찰하다"
+      "reading": "현상"
     },
     {
       "hanja": "本質",
-      "reading": "본질",
-      "meaning": "어떤 대상을 그 대상이게 하는 근본적인 성질",
-      "components": "本:근본 본 | 質:바탕 질",
-      "example": "문제의 본질을 파악하다"
+      "reading": "본질"
     },
     {
       "hanja": "認識",
-      "reading": "인식",
-      "meaning": "사물을 분별하고 이해함",
-      "components": "認:알 인 | 識:알 식",
-      "example": "자신의 한계를 인식하다"
+      "reading": "인식"
     },
     {
       "hanja": "命題",
-      "reading": "명제",
-      "meaning": "참 또는 거짓을 판정할 수 있는 진술 내용",
-      "components": "命:목숨 명 | 題:제목 제",
-      "example": "주어진 명제의 참과 거짓"
+      "reading": "명제"
     }
   ]
 }
