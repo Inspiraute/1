@@ -24,7 +24,8 @@
     .contentpanel{padding:23px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.formfield{display:flex;flex-direction:column;gap:6px}.formfield.wide{grid-column:1/-1}.formfield textarea{resize:vertical;min-height:77px}.formactions{display:flex;gap:9px;margin-top:15px;flex-wrap:wrap}.wordsbar{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;margin:27px 0 14px}.search{max-width:320px}.wordlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.worditem{border:1px solid var(--line);border-radius:15px;padding:16px;display:flex;justify-content:space-between;gap:8px;background:#fff}.worditem h3{font-family:"Songti SC",serif;font-size:25px;margin:0 0 1px;font-weight:680}.worditem .pron{font-size:14px;font-weight:800}.worditem .def{font-size:12px;color:var(--muted);margin-top:4px}.worditem .score{font-size:11px;color:var(--red);margin-top:8px}.worditem .actions{display:flex;gap:4px;align-items:start}.worditem .actions button{border:1px solid var(--line);background:white;border-radius:9px;padding:7px 8px;font-size:11px;color:#526079}.note{border-radius:12px;background:#f1f5ff;padding:13px 15px;color:#435379;font-size:13px;margin:14px 0}.codeexample{font-size:12px;background:#151e35;color:#e5efff;border-radius:13px;padding:17px;overflow-x:auto;white-space:pre;line-height:2.1}.importgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:18px}.importtext{width:100%;min-height:170px;resize:vertical;outline:0;border-radius:14px;border:1px solid #dce2ee;padding:13px;line-height:1.7;font-size:13px}.help p{font-size:13px;color:var(--muted)}.statgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.statbox{border:1px solid var(--line);border-radius:15px;background:white;padding:17px}.statbox strong{font-size:27px;letter-spacing:-1px;display:block}.statbox span{font-size:12px;color:var(--muted)}.hardlist{display:flex;flex-direction:column;gap:8px;margin-top:13px}.hardrow{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0;gap:12px;font-size:13px}.hardrow strong{font-size:19px;font-family:"Songti SC",serif}.footer{margin:23px 0 0;font-size:12px;color:#8791a5;text-align:center}.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:max(28px,env(safe-area-inset-bottom));background:#17223c;color:#fff;padding:12px 19px;border-radius:13px;font-size:13px;z-index:20;box-shadow:0 14px 28px #121e3e44;max-width:90vw;text-align:center}.file-hidden{display:none}
     @media(max-width:850px){.study-grid{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}.side h3{grid-column:1/-1;margin-bottom:0}.side .divider{display:none}.side .tips{grid-column:1/-1;margin-top:0}.importgrid{grid-template-columns:1fr}} @media(max-width:620px){.wrap{padding:16px 15px 70px}.top{margin-bottom:15px}.topnote{display:none}.intro{display:block;margin-top:19px}.stats-mini{margin-top:18px}.ministat{flex:1}.nav{margin:15px -5px 20px}.nav button{padding:10px 13px}.study-main,.contentpanel{padding:16px}.control{min-width:130px}.flashcard{min-height:330px}.face{padding:18px}.wordlist,.formgrid{grid-template-columns:1fr}.statgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.search{max-width:none}.wordsbar .search{width:100%}.side{padding:18px}.btn{padding:12px 13px}.backhanja{font-size:42px}.reading{font-size:41px}}
     @media(prefers-reduced-motion:reduce){.flashcard{transition:none}}
-  </style>
+  .syncbar{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 14px;background:white;border:1px solid var(--line);border-radius:12px;margin:8px 0 17px;font-size:13px;color:var(--muted)}.syncbar button{flex-shrink:0}
+</style>
 </head>
 <body>
 <div id="preview-warning" style="padding:13px 18px;background:#fff2cd;color:#53420b;font-size:14px;text-align:center;line-height:1.5"><strong>파일 미리보기에서는 버튼이 작동하지 않을 수 있어.</strong> 이 앱은 JavaScript가 허용되는 웹브라우저에서 실행해야 해. HTML 파일을 보기만 하는 것은 설치가 아니야.</div>
@@ -38,6 +39,7 @@
   <div class="stats-mini"><div class="ministat"><b id="mini-total">0</b><span>등록 단어</span></div><div class="ministat"><b id="mini-seen">0</b><span>학습한 단어</span></div><div class="ministat"><b id="mini-wrong">0</b><span>누적 오답</span></div></div>
 </section>
 <nav class="nav" aria-label="화면 이동"><button class="active" data-tab="study">◎ 암기하기</button><button data-tab="words">▤ 나의 단어장</button><button data-tab="import">⇩ 일괄 등록 · 백업</button><button data-tab="stats">▦ 통계</button></nav>
+<div class="syncbar"><span id="sync-status" role="status">단어장 동기화 준비 중</span><button id="sync-now" class="btn mini secondary" type="button">↻ 지금 확인</button></div>
 <main>
 <section id="pane-study" class="pane active">
  <div class="study-grid">
@@ -71,7 +73,7 @@
 <section id="pane-import" class="pane">
  <div class="importgrid">
   <div class="panel contentpanel"><div class="sectiontitle">여러 단어 한 번에 추가</div><p class="small muted">엑셀에서 복사한 표를 그대로 붙여넣어도 돼. 한 줄에 한 단어씩 작성해.</p><textarea id="bulk-input" class="importtext" aria-label="일괄 등록 텍스트" spellcheck="false" placeholder="乖離&#9;괴리&#9;서로 어긋나거나 동떨어짐&#9;乖:어그러질 괴 | 離:떠날 리"></textarea><div class="formactions"><button class="btn primary" id="bulk-add">+ 단어 일괄 등록</button><button class="btn secondary" id="bulk-example">예시 입력</button></div><div class="note">열 순서: <strong>한자어 [탭] 읽기 [탭] 뜻 [탭] 개별 음훈 [탭] 예문</strong><br>앞의 세 열만 있어도 등록할 수 있어. 같은 한자어·읽기 조합은 중복 추가하지 않아.</div><div class="codeexample">乖離    괴리    서로 어긋나거나 동떨어짐    乖:어그러질 괴 | 離:떠날 리<br>歸結    귀결    일정한 결론에 이름    歸:돌아갈 귀 | 結:맺을 결</div></div>
-  <div class="panel contentpanel help"><div class="sectiontitle">내 단어장 백업</div><p>브라우저에 기록을 자동 저장하지만, 앱 데이터가 삭제되거나 다른 기기로 옮길 때를 대비해 파일로도 보관하길 추천해.</p><div class="formactions"><button class="btn primary" id="export-json">JSON 전체 백업</button><button class="btn outline" id="export-tsv">엑셀용 TSV 내보내기</button></div><div class="divider"></div><div class="sectiontitle">백업 불러오기</div><p>이 앱에서 만든 JSON 파일을 가져오면 카드와 정오답 기록을 합칠 수 있어.</p><button class="btn secondary" id="import-json-btn">JSON 파일 선택</button><input class="file-hidden" type="file" accept=".json,application/json" id="import-json"/><div class="divider"></div><div class="sectiontitle">주의할 점</div><p>이 파일은 한 기기에서 개인적으로 쓰는 웹앱이야. 로그인이나 클라우드 동기화는 없고, 음훈은 직접 입력하는 방식이야.</p><button class="btn outline" id="reset-progress">전체 학습 기록 초기화</button></div>
+  <div class="panel contentpanel help"><div class="sectiontitle">내 단어장 백업</div><p>브라우저에 기록을 자동 저장하지만, 앱 데이터가 삭제되거나 다른 기기로 옮길 때를 대비해 파일로도 보관하길 추천해.</p><div class="formactions"><button class="btn primary" id="export-json">JSON 전체 백업</button><button class="btn outline" id="export-tsv">엑셀용 TSV 내보내기</button></div><div class="divider"></div><div class="sectiontitle">백업 불러오기</div><p>이 앱에서 만든 JSON 파일을 가져오면 카드와 정오답 기록을 합칠 수 있어.</p><button class="btn secondary" id="import-json-btn">JSON 파일 선택</button><input class="file-hidden" type="file" accept=".json,application/json" id="import-json"/><div class="divider"></div><div class="sectiontitle">주의할 점</div><p>공용 한자어는 GitHub에서 자동으로 추가돼. 개인 학습 기록과 직접 등록한 단어는 이 기기에만 저장되고 다른 기기로 자동 전송되지 않아. 정기적으로 JSON 백업을 보관해 줘.</p><button class="btn outline" id="reset-progress">전체 학습 기록 초기화</button></div>
  </div>
 </section>
 <section id="pane-stats" class="pane">
@@ -86,7 +88,7 @@
 'use strict';
 (() => {
  document.getElementById('preview-warning').hidden = true;
- const KEY='hanjagyeol.words.v1', SETKEY='hanjagyeol.settings.v1';
+ const KEY='hanjagyeol.words.v1', SETKEY='hanjagyeol.settings.v1', HIDDENKEY='hanjagyeol.hidden.v1';
  const SEED=[
   ['乖離','괴리','서로 어긋나거나 동떨어짐','乖:어그러질 괴 | 離:떠날 리','이상과 현실의 괴리'],
   ['歸結','귀결','어떤 과정이나 논의가 일정한 결론에 이름','歸:돌아갈 귀 | 結:맺을 결','논의가 하나의 결론으로 귀결되다'],
@@ -104,12 +106,41 @@
  const safeStorage=(store,key,value)=>{try{if(store==='get')return localStorage.getItem(key);localStorage.setItem(key,value);return true}catch(e){return store==='get'?null:false}};
  function load(){let raw=safeStorage('get',KEY);if(raw!==null){try{const v=JSON.parse(raw);if(Array.isArray(v))return v.map(normalize).filter(w=>w.hanja&&w.reading&&w.meaning)}catch(e){}}return SEED.map(make)}
  function normalize(x){return {id:String(x.id||uid()),hanja:String(x.hanja||'').trim(),reading:String(x.reading||'').trim(),meaning:String(x.meaning||'').trim(),components:String(x.components||'').trim(),example:String(x.example||'').trim(),right:Math.max(0,Number(x.right)||0),wrong:Math.max(0,Number(x.wrong)||0),seen:Math.max(0,Number(x.seen)||0),streak:Math.max(0,Number(x.streak)||0)} }
- let cards=load();let settings={direction:'hanja',order:'random',filter:'all'};try{settings={...settings,...JSON.parse(safeStorage('get',SETKEY)||'{}')}}catch(e){}
+ let cards=load(),hidden;try{const a=JSON.parse(safeStorage('get',HIDDENKEY)||'[]');hidden=new Set(Array.isArray(a)?a:[])}catch(e){hidden=new Set()}
+ const wordKey=w=>w.hanja+'\u0000'+w.reading;
+ const saveHidden=()=>safeStorage('set',HIDDENKEY,JSON.stringify([...hidden]));
+ let pendingSync=null,lastAttempt=0;
+ let settings={direction:'hanja',order:'random',filter:'all'};try{settings={...settings,...JSON.parse(safeStorage('get',SETKEY)||'{}')}}catch(e){}
  if(!['hanja','reading','mix'].includes(settings.direction))settings.direction='hanja';if(!['random','wrong'].includes(settings.order))settings.order='random';if(!['all','wrong','new'].includes(settings.filter))settings.filter='all';
  let currentId=null,curDir='hanja',revealed=false,usedIds=[],editId=null,sessionCorrect=0,sessionWrong=0,toastTimer=null;
  function persist(){if(!safeStorage('set',KEY,JSON.stringify(cards)))$('#storage-status').textContent='⚠ 자동 저장 제한 · JSON 백업 권장'}
  function persistSettings(){safeStorage('set',SETKEY,JSON.stringify(settings))}
  function showToast(msg){let el=$('#toast');el.textContent=msg;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,2800)}
+ async function syncWords(manual=false){
+  if(pendingSync)return pendingSync;
+  if(!manual && Date.now()-lastAttempt<60000)return;
+  lastAttempt=Date.now();
+  $('#sync-status').textContent='공용 단어장 확인 중…';
+  pendingSync=(async()=>{
+   const response=await fetch('./words.json',{cache:'no-store'});
+   if(!response.ok)throw Error('HTTP '+response.status);
+   const data=await response.json();
+   if(data.version!==1||!Array.isArray(data.words))throw Error('데이터 형식 오류');
+   const existing=new Set(cards.map(wordKey));
+   let added=0;
+   for(const entry of data.words){
+    if(!entry||typeof entry!=='object')continue;
+    const w=normalize(entry),key=wordKey(w);
+    if(!w.hanja||!w.reading||!w.meaning||w.hanja.length>30||w.reading.length>50||w.meaning.length>250||existing.has(key)||hidden.has(key))continue;
+    cards.push(make([w.hanja,w.reading,w.meaning,w.components,w.example]));
+    existing.add(key);added++;
+   }
+   if(added){persist();renderAll()}
+   $('#sync-status').textContent='마지막 확인 '+new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'})+(added?' · 새 단어 '+added+'개':' · 최신 상태');
+   if(manual)showToast(added?added+'개 추가했어':'이미 최신 단어장이야');
+  })().catch(()=>{$('#sync-status').textContent='연결 실패 · 저장된 단어장 사용 중';if(manual)showToast('인터넷 연결 후 다시 확인해 줘')}).finally(()=>{pendingSync=null});
+  return pendingSync;
+ }
  function switchTab(tab){$$('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));$$('.pane').forEach(x=>x.classList.toggle('active',x.id==='pane-'+tab));if(tab==='words')renderWords();if(tab==='stats')renderStats();window.scrollTo({top:0,behavior:'smooth'})}
  function candidates(){return cards.filter(w=>settings.filter==='all'||(settings.filter==='wrong'&&w.wrong>0)||(settings.filter==='new'&&w.seen===0))}
  function chooseNext(){const p=candidates();if(!p.length){currentId=null;return}let rem=p.filter(w=>!usedIds.includes(w.id));if(!rem.length){usedIds=[];rem=p}if(rem.length>1)rem=rem.filter(w=>w.id!==currentId).length?rem.filter(w=>w.id!==currentId):rem;
@@ -127,18 +158,18 @@
  function renderWords(){const q=$('#word-search').value.trim().toLocaleLowerCase();let list=cards.filter(w=>[w.hanja,w.reading,w.meaning,w.components,w.example].some(x=>x.toLocaleLowerCase().includes(q)));$('#word-list').innerHTML=list.length?list.map(w=>'<article class="worditem"><div style="min-width:0"><h3>'+escapeHTML(w.hanja)+'</h3><div class="pron">'+escapeHTML(w.reading)+'</div><div class="def">'+escapeHTML(w.meaning)+'</div>'+(w.components?'<div class="def">'+escapeHTML(w.components)+'</div>':'')+'<div class="score">'+(w.wrong?'오답 '+w.wrong+'회':'오답 없음')+' · 정답 '+w.right+'회</div></div><div class="actions"><button data-word-action="edit" data-id="'+escapeHTML(w.id)+'">수정</button><button data-word-action="delete" data-id="'+escapeHTML(w.id)+'">삭제</button></div></article>').join(''):'<div class="empty" style="grid-column:1/-1;min-height:150px"><strong>검색 결과가 없어</strong><span>검색어를 바꾸거나 새 단어를 등록해봐.</span></div>'}
  function resetForm(){$('#wordform').reset();editId=null;$('#form-title').textContent='단어 추가하기';$('#save-word').textContent='+ 단어 저장';$('#cancel-edit').hidden=true}
  function editWord(id){let w=cards.find(w=>w.id===id);if(!w)return;editId=w.id;$('#f-hanja').value=w.hanja;$('#f-reading').value=w.reading;$('#f-meaning').value=w.meaning;$('#f-components').value=w.components;$('#f-example').value=w.example;$('#form-title').textContent='단어 수정하기';$('#save-word').textContent='변경 저장';$('#cancel-edit').hidden=false;window.scrollTo({top:0,behavior:'smooth'});$('#f-hanja').focus()}
- function addOrUpdate(e){e.preventDefault();const wasEditing=Boolean(editId);let a=['#f-hanja','#f-reading','#f-meaning','#f-components','#f-example'].map(s=>$(s).value.trim());if(!a[0]||!a[1]||!a[2])return showToast('한자어·읽기·뜻을 입력해 줘');let duplicate=cards.find(w=>w.hanja===a[0]&&w.reading===a[1]&&w.id!==editId);if(duplicate)return showToast('이미 등록된 한자어와 읽기 조합이야');if(editId){let i=cards.findIndex(w=>w.id===editId);if(i>=0)cards[i]={...cards[i],...make(a),id:cards[i].id,right:cards[i].right,wrong:cards[i].wrong,seen:cards[i].seen,streak:cards[i].streak}}else cards.push(make(a));persist();resetForm();renderAll();showToast(wasEditing?'수정 완료':'단어 저장 완료')}
+ function addOrUpdate(e){e.preventDefault();const wasEditing=Boolean(editId);let a=['#f-hanja','#f-reading','#f-meaning','#f-components','#f-example'].map(s=>$(s).value.trim());if(!a[0]||!a[1]||!a[2])return showToast('한자어·읽기·뜻을 입력해 줘');let duplicate=cards.find(w=>w.hanja===a[0]&&w.reading===a[1]&&w.id!==editId);if(duplicate)return showToast('이미 등록된 한자어와 읽기 조합이야');if(editId){let i=cards.findIndex(w=>w.id===editId);if(i>=0){if(wordKey(cards[i])!==a[0]+'\u0000'+a[1])hidden.add(wordKey(cards[i]));cards[i]={...cards[i],...make(a),id:cards[i].id,right:cards[i].right,wrong:cards[i].wrong,seen:cards[i].seen,streak:cards[i].streak}}}else cards.push(make(a));hidden.delete(a[0]+'\u0000'+a[1]);saveHidden();persist();resetForm();renderAll();showToast(wasEditing?'수정 완료':'단어 저장 완료')}
  function renderStats(){let totalRight=cards.reduce((a,w)=>a+w.right,0),totalWrong=cards.reduce((a,w)=>a+w.wrong,0),n=totalRight+totalWrong;$('#stat-total').textContent=cards.length;$('#stat-seen').textContent=cards.filter(w=>w.seen>0).length;$('#stat-rate').textContent=n?Math.round(totalRight/n*100)+'%':'—';$('#stat-wrong').textContent=totalWrong;let hard=[...cards].filter(w=>w.wrong>0).sort((a,b)=>b.wrong-a.wrong||a.right-b.right).slice(0,8);$('#hard-list').innerHTML=hard.length?hard.map(w=>'<div class="hardrow"><div><strong>'+escapeHTML(w.hanja)+'</strong> &nbsp;'+escapeHTML(w.reading)+' <span class="muted">· '+escapeHTML(w.meaning)+'</span></div><div style="white-space:nowrap;color:var(--red)">오답 '+w.wrong+'회</div></div>').join(''):'<div class="small muted">아직 오답 기록이 없어. 공부를 시작해 봐!</div>'}
  function renderAll(){if(currentId&&!cards.some(w=>w.id===currentId))chooseNext();if(!currentId&&candidates().length)chooseNext();renderCounters();renderStudy();renderWords();renderStats()}
  function record(ok){let w=getCurrent();if(!w||!revealed)return;w.seen++;if(ok){w.right++;w.streak++;sessionCorrect++}else{w.wrong++;w.streak=0;sessionWrong++}persist();chooseNext();renderAll()}
  function resetSequence(){usedIds=[];currentId=null;chooseNext();renderStudy()}
  function parseTSV(raw){let lines=raw.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);let result=[],bad=0;for(const l of lines){let a=l.split('\t').map(x=>x.trim());if(a.length<3) a=l.split(/\s{2,}/).map(x=>x.trim());if(a.length<3||!a[0]||!a[1]||!a[2]){bad++;continue}if(/^(한자어|한자|漢字)$/i.test(a[0]))continue;result.push(make(a))}return{result,bad}}
- function bulkAdd(){let raw=$('#bulk-input').value.trim();if(!raw)return showToast('먼저 단어 목록을 붙여넣어 줘');let {result,bad}=parseTSV(raw),added=0;let exists=new Set(cards.map(w=>w.hanja+'\u0000'+w.reading));for(let w of result){let k=w.hanja+'\u0000'+w.reading;if(exists.has(k))continue;cards.push(w);exists.add(k);added++}if(!result.length)return showToast('열 구분을 확인해 줘 (탭 또는 두 칸 이상의 공백)');persist();resetSequence();renderAll();showToast(added+'개 추가'+(bad?', '+bad+'줄 형식 확인 필요':'')+' · 중복 '+(result.length-added)+'개 제외');$('#bulk-input').value=''}
+ function bulkAdd(){let raw=$('#bulk-input').value.trim();if(!raw)return showToast('먼저 단어 목록을 붙여넣어 줘');let {result,bad}=parseTSV(raw),added=0;let exists=new Set(cards.map(w=>w.hanja+'\u0000'+w.reading));for(let w of result){let k=w.hanja+'\u0000'+w.reading;if(exists.has(k))continue;cards.push(w);hidden.delete(k);exists.add(k);added++}if(!result.length)return showToast('열 구분을 확인해 줘 (탭 또는 두 칸 이상의 공백)');persist();resetSequence();renderAll();showToast(added+'개 추가'+(bad?', '+bad+'줄 형식 확인 필요':'')+' · 중복 '+(result.length-added)+'개 제외');$('#bulk-input').value=''}
  function download(name,content,mime){let blob=new Blob([content],{type:mime});let url=URL.createObjectURL(blob);let a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)}
  function escapeTSV(s){return String(s||'').replace(/[\t\r\n]+/g,' ')}
  function backup(){download('한자결_백업_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({app:'hanjagyeol',version:1,exportedAt:new Date().toISOString(),cards},null,2),'application/json;charset=utf-8');showToast('백업 파일을 저장했어')}
  function exportTSV(){let txt='한자어\t읽기\t뜻\t개별 음훈\t예문\t정답 횟수\t오답 횟수\n'+cards.map(w=>[w.hanja,w.reading,w.meaning,w.components,w.example,w.right,w.wrong].map(escapeTSV).join('\t')).join('\n');download('한자결_단어장.tsv','\uFEFF'+txt,'text/tab-separated-values;charset=utf-8');showToast('TSV 파일을 저장했어')}
- async function importJSON(ev){let f=ev.target.files&&ev.target.files[0];if(!f)return;try{let obj=JSON.parse(await f.text());let arr=Array.isArray(obj)?obj:obj.cards;if(!Array.isArray(arr))throw Error('카드 목록이 없는 파일');let incoming=arr.map(normalize).filter(w=>w.hanja&&w.reading&&w.meaning);if(!incoming.length)throw Error('유효한 단어가 없어');let existing=new Map(cards.map(w=>[w.hanja+'\u0000'+w.reading,w]));let added=0,updated=0;for(let w of incoming){let k=w.hanja+'\u0000'+w.reading;if(existing.has(k)){let old=existing.get(k);old.meaning=w.meaning;old.components=w.components;old.example=w.example;old.right=Math.max(old.right,w.right);old.wrong=Math.max(old.wrong,w.wrong);old.seen=Math.max(old.seen,w.seen);old.streak=Math.max(old.streak,w.streak);updated++}else{w.id=uid();cards.push(w);existing.set(k,w);added++}}persist();resetSequence();renderAll();showToast('가져오기 완료 · 새 단어 '+added+'개 / 기존 '+updated+'개 갱신')}catch(e){showToast('파일을 불러오지 못했어: '+e.message)}ev.target.value=''}
+ async function importJSON(ev){let f=ev.target.files&&ev.target.files[0];if(!f)return;try{let obj=JSON.parse(await f.text());let arr=Array.isArray(obj)?obj:obj.cards;if(!Array.isArray(arr))throw Error('카드 목록이 없는 파일');let incoming=arr.map(normalize).filter(w=>w.hanja&&w.reading&&w.meaning);if(!incoming.length)throw Error('유효한 단어가 없어');let existing=new Map(cards.map(w=>[w.hanja+'\u0000'+w.reading,w]));let added=0,updated=0;for(let w of incoming){let k=w.hanja+'\u0000'+w.reading;hidden.delete(k);if(existing.has(k)){let old=existing.get(k);old.meaning=w.meaning;old.components=w.components;old.example=w.example;old.right=Math.max(old.right,w.right);old.wrong=Math.max(old.wrong,w.wrong);old.seen=Math.max(old.seen,w.seen);old.streak=Math.max(old.streak,w.streak);updated++}else{w.id=uid();cards.push(w);existing.set(k,w);added++}}saveHidden();persist();resetSequence();renderAll();showToast('가져오기 완료 · 새 단어 '+added+'개 / 기존 '+updated+'개 갱신')}catch(e){showToast('파일을 불러오지 못했어: '+e.message)}ev.target.value=''}
  $$('.nav button').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
  $$('#pane-study .pill').forEach(b=>b.addEventListener('click',()=>{settings.filter=b.dataset.filter;persistSettings();resetSequence()}));
  $('#direction').addEventListener('change',e=>{settings.direction=e.target.value;persistSettings();resetSequence()});
@@ -148,16 +179,19 @@
  $('#wordform').addEventListener('submit',addOrUpdate);
  $('#cancel-edit').addEventListener('click',resetForm);
  $('#word-search').addEventListener('input',renderWords);
- $('#word-list').addEventListener('click',e=>{let b=e.target.closest('[data-word-action]');if(!b)return;if(b.dataset.wordAction==='edit')editWord(b.dataset.id);if(b.dataset.wordAction==='delete'){let w=cards.find(w=>w.id===b.dataset.id);if(!w||!confirm(w.hanja+' ('+w.reading+')을 삭제할까?'))return;cards=cards.filter(x=>x.id!==w.id);if(editId===w.id)resetForm();persist();renderAll();showToast('단어 삭제 완료')}});
+ $('#word-list').addEventListener('click',e=>{let b=e.target.closest('[data-word-action]');if(!b)return;if(b.dataset.wordAction==='edit')editWord(b.dataset.id);if(b.dataset.wordAction==='delete'){let w=cards.find(w=>w.id===b.dataset.id);if(!w||!confirm(w.hanja+' ('+w.reading+')을 삭제할까?'))return;hidden.add(wordKey(w));saveHidden();cards=cards.filter(x=>x.id!==w.id);if(editId===w.id)resetForm();persist();renderAll();showToast('단어 삭제 완료')}});
  $('#bulk-add').addEventListener('click',bulkAdd);
  $('#bulk-example').addEventListener('click',()=>{$('#bulk-input').value='乖離\t괴리\t서로 어긋나거나 동떨어짐\t乖:어그러질 괴 | 離:떠날 리\t이상과 현실의 괴리\n歸結\t귀결\t어떤 과정이나 논의가 일정한 결론에 이름\t歸:돌아갈 귀 | 結:맺을 결\t논의가 하나의 결론으로 귀결되다';showToast('예시를 넣었어. 이미 있는 단어는 중복 등록되지 않아')});
  $('#export-json').addEventListener('click',backup);$('#export-tsv').addEventListener('click',exportTSV);
  $('#import-json-btn').addEventListener('click',()=>$('#import-json').click());$('#import-json').addEventListener('change',importJSON);
  $('#reset-progress').addEventListener('click',()=>{if(!confirm('단어는 남기고 정답·오답·학습 횟수만 모두 0으로 되돌릴까?'))return;cards.forEach(w=>{w.right=0;w.wrong=0;w.seen=0;w.streak=0});sessionCorrect=0;sessionWrong=0;persist();resetSequence();renderAll();showToast('학습 기록을 초기화했어')});
+ $('#sync-now').addEventListener('click',()=>syncWords(true));
+ window.addEventListener('focus',()=>syncWords());
+ document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')syncWords()});
  $('#go-wrong').addEventListener('click',()=>{settings.filter='wrong';persistSettings();resetSequence();switchTab('study')});
  window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)||!$('#pane-study').classList.contains('active'))return;if(e.code==='Space'){e.preventDefault();revealed=!revealed;renderStudy()}if(revealed&&(e.key==='1'||e.key==='ArrowLeft'))record(false);else if(revealed&&(e.key==='2'||e.key==='ArrowRight'))record(true)});
  if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
- persist();resetSequence();renderAll();
+ persist();resetSequence();renderAll();syncWords();
 })();
 </script>
 </body>
