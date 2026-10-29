@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "description": "한자결 공용 단어장. 개인 학습 기록은 각 기기에만 저장됩니다.",
+  "words": [
+    {
+      "hanja": "乖離",
+      "reading": "괴리",
+      "meaning": "서로 어긋나거나 동떨어짐",
+      "components": "乖:어그러질 괴 | 離:떠날 리",
+      "example": "이상과 현실의 괴리"
+    },
+    {
+      "hanja": "歸結",
+      "reading": "귀결",
+      "meaning": "어떤 과정이나 논의가 일정한 결론에 이름",
+      "components": "歸:돌아갈 귀 | 結:맺을 결",
+      "example": "논의가 하나의 결론으로 귀결되다"
+    },
+    {
+      "hanja": "演繹",
+      "reading": "연역",
+      "meaning": "일반적인 원리에서 개별적인 결론을 이끌어 냄",
+      "components": "演:펼 연 | 繹:풀 역",
+      "example": "전제로부터 결론을 연역하다"
+    },
+    {
+      "hanja": "歸納",
+      "reading": "귀납",
+      "meaning": "개별 사례에서 일반적인 원리나 결론을 이끌어 냄",
+      "components": "歸:돌아갈 귀 | 納:들일 납",
+      "example": "관찰 결과를 귀납하다"
+    },
+    {
+      "hanja": "現象",
+      "reading": "현상",
+      "meaning": "감각이나 의식에 나타나는 사물의 모습 또는 사건",
+      "components": "現:나타날 현 | 象:모양 상",
+      "example": "자연 현상을 관찰하다"
+    },
+    {
+      "hanja": "本質",
+      "reading": "본질",
+      "meaning": "어떤 대상을 그 대상이게 하는 근본적인 성질",
+      "components": "本:근본 본 | 質:바탕 질",
+      "example": "문제의 본질을 파악하다"
+    },
+    {
+      "hanja": "認識",
+      "reading": "인식",
+      "meaning": "사물을 분별하고 이해함",
+      "components": "認:알 인 | 識:알 식",
+      "example": "자신의 한계를 인식하다"
+    },
+    {
+      "hanja": "命題",
+      "reading": "명제",
+      "meaning": "참 또는 거짓을 판정할 수 있는 진술 내용",
+      "components": "命:목숨 명 | 題:제목 제",
+      "example": "주어진 명제의 참과 거짓"
+    }
+  ]
+}
