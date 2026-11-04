@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "title": "한국의 한자와 한자어 — 9주차",
-  "description": "9주차 1·2차시 교재의 독립된 한자어 및 한자만 수록. 뜻은 학습용 풀이로 보충.",
+  "title": "한국의 한자와 한자어 — 9·10주차",
+  "description": "9·10주차 1·2차시 교재의 별도 표기된 한자어·낱자와 어휘 예시 수록. 한문 본문·시구 제외. 뜻은 학습용 풀이로 보충.",
   "words": [
     {
       "hanja": "過去",
@@ -426,6 +426,774 @@
       "components": "驚:놀랄 경",
       "example": "",
       "lesson": "9주차 2차시"
+    },
+    {
+      "hanja": "居",
+      "reading": "거",
+      "meaning": "살다 또는 머무르다",
+      "components": "居:살 거",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "居室",
+      "reading": "거실",
+      "meaning": "집에서 가족이 모여 생활하는 방",
+      "components": "居:살 거 | 室:집 실",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "居處",
+      "reading": "거처",
+      "meaning": "사람이 머물러 사는 곳",
+      "components": "居:살 거 | 處:곳 처",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "隱居",
+      "reading": "은거",
+      "meaning": "세상을 피해 숨어서 삶",
+      "components": "隱:숨을 은 | 居:살 거",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "蟄居",
+      "reading": "칩거",
+      "meaning": "집 안에 틀어박혀 밖에 나가지 않음",
+      "components": "蟄:숨을 칩 | 居:살 거",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "屋",
+      "reading": "옥",
+      "meaning": "집",
+      "components": "屋:집 옥",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "尾",
+      "reading": "미",
+      "meaning": "꼬리",
+      "components": "尾:꼬리 미",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資",
+      "reading": "자",
+      "meaning": "바탕 또는 재물",
+      "components": "資:바탕 자",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資格",
+      "reading": "자격",
+      "meaning": "어떤 일을 할 수 있는 조건이나 지위",
+      "components": "資:바탕 자 | 格:격식 격",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資源",
+      "reading": "자원",
+      "meaning": "생산과 생활에 이용할 수 있는 재료나 원천",
+      "components": "資:바탕 자 | 源:근원 원",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資料",
+      "reading": "자료",
+      "meaning": "연구하거나 판단하는 데 바탕이 되는 정보",
+      "components": "資:바탕 자 | 料:헤아릴 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資質",
+      "reading": "자질",
+      "meaning": "타고난 성품이나 능력의 바탕",
+      "components": "資:바탕 자 | 質:바탕 질",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資本",
+      "reading": "자본",
+      "meaning": "사업이나 생산 활동의 바탕이 되는 돈 또는 재산",
+      "components": "資:바탕 자 | 本:근본 본",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資金",
+      "reading": "자금",
+      "meaning": "어떤 일에 필요한 돈",
+      "components": "資:바탕 자 | 金:쇠 금",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "資産",
+      "reading": "자산",
+      "meaning": "경제적 가치가 있는 재산",
+      "components": "資:바탕 자 | 産:낳을 산",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "麗",
+      "reading": "려",
+      "meaning": "곱다 또는 아름답다",
+      "components": "麗:고울 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "秀麗",
+      "reading": "수려",
+      "meaning": "빼어나게 아름다움",
+      "components": "秀:빼어날 수 | 麗:고울 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "美麗",
+      "reading": "미려",
+      "meaning": "아름답고 고움",
+      "components": "美:아름다울 미 | 麗:고울 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "華麗",
+      "reading": "화려",
+      "meaning": "빛나고 아름다우며 눈부심",
+      "components": "華:빛날 화 | 麗:고울 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "美辭麗句",
+      "reading": "미사여구",
+      "meaning": "화려하게 꾸민 아름다운 말과 글귀",
+      "components": "美:아름다울 미 | 辭:말씀 사 | 麗:고울 려 | 句:글귀 구",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "儷",
+      "reading": "려",
+      "meaning": "짝 또는 배필",
+      "components": "儷:짝 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "驪",
+      "reading": "려",
+      "meaning": "검은 말",
+      "components": "驪:검은 말 려",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "灑",
+      "reading": "쇄",
+      "meaning": "뿌리다",
+      "components": "灑:뿌릴 쇄",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "長",
+      "reading": "장",
+      "meaning": "길다 또는 자라다",
+      "components": "長:길 장",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "長歌",
+      "reading": "장가",
+      "meaning": "길게 부르는 노래",
+      "components": "長:길 장 | 歌:노래 가",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "長官",
+      "reading": "장관",
+      "meaning": "한 부처의 우두머리인 고위 공직자",
+      "components": "長:길 장 | 官:벼슬 관",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "成長",
+      "reading": "성장",
+      "meaning": "몸이나 능력 등이 자라서 커짐",
+      "components": "成:이룰 성 | 長:길 장",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "長點",
+      "reading": "장점",
+      "meaning": "좋거나 뛰어난 점",
+      "components": "長:길 장 | 點:점 점",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "張",
+      "reading": "장",
+      "meaning": "베풀다 또는 펼치다",
+      "components": "張:베풀 장",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "帳",
+      "reading": "장",
+      "meaning": "장막 또는 휘장",
+      "components": "帳:장막 장",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "療",
+      "reading": "료",
+      "meaning": "병을 고치다",
+      "components": "療:고칠 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "治療",
+      "reading": "치료",
+      "meaning": "병이나 상처를 낫게 함",
+      "components": "治:다스릴 치 | 療:고칠 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "診療",
+      "reading": "진료",
+      "meaning": "의사가 환자를 진찰하고 치료함",
+      "components": "診:진찰할 진 | 療:고칠 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "療養",
+      "reading": "요양",
+      "meaning": "병이나 몸을 돌보며 회복함",
+      "components": "療:고칠 료 | 養:기를 양",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "療飢",
+      "reading": "요기",
+      "meaning": "시장기를 조금 면할 정도로 먹음",
+      "components": "療:고칠 료 | 飢:주릴 기",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "僚",
+      "reading": "료",
+      "meaning": "동료 또는 같은 관직의 사람",
+      "components": "僚:동료 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "遼",
+      "reading": "료",
+      "meaning": "멀다",
+      "components": "遼:멀 료",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "盛",
+      "reading": "성",
+      "meaning": "성하다 또는 번성하다",
+      "components": "盛:성할 성",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "盛夏",
+      "reading": "성하",
+      "meaning": "한여름의 무더운 시기",
+      "components": "盛:성할 성 | 夏:여름 하",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "隆盛",
+      "reading": "융성",
+      "meaning": "매우 성하고 번영함",
+      "components": "隆:높을 륭 | 盛:성할 성",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "興亡盛衰",
+      "reading": "흥망성쇠",
+      "meaning": "일어나고 망하며 번성하고 쇠퇴함",
+      "components": "興:일어날 흥 | 亡:망할 망 | 盛:성할 성 | 衰:쇠할 쇠",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "珍羞盛饌",
+      "reading": "진수성찬",
+      "meaning": "진귀하고 풍성하게 차린 음식",
+      "components": "珍:보배 진 | 羞:진미 수 | 盛:성할 성 | 饌:반찬 찬",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "雲雨之情",
+      "reading": "운우지정",
+      "meaning": "남녀가 육체적 사랑을 나누는 정",
+      "components": "雲:구름 운 | 雨:비 우 | 之:갈 지 | 情:뜻 정",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "疑",
+      "reading": "의",
+      "meaning": "의심하다",
+      "components": "疑:의심할 의",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "疑問",
+      "reading": "의문",
+      "meaning": "의심스럽거나 분명하지 않아 생기는 물음",
+      "components": "疑:의심할 의 | 問:물을 문",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "疑心",
+      "reading": "의심",
+      "meaning": "확실히 믿지 못하고 수상하게 여김",
+      "components": "疑:의심할 의 | 心:마음 심",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "疑惑",
+      "reading": "의혹",
+      "meaning": "의심스럽고 미심쩍은 생각",
+      "components": "疑:의심할 의 | 惑:미혹할 혹",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "疑訝",
+      "reading": "의아",
+      "meaning": "이상하게 여기거나 의심스러워함",
+      "components": "疑:의심할 의 | 訝:의심할 아",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "擬",
+      "reading": "의",
+      "meaning": "헤아리다 또는 견주다",
+      "components": "擬:헤아릴 의",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "凝",
+      "reading": "응",
+      "meaning": "엉기다 또는 굳다",
+      "components": "凝:엉길 응",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "期",
+      "reading": "기",
+      "meaning": "기약하다 또는 일정한 때",
+      "components": "期:기약할 기",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "期待",
+      "reading": "기대",
+      "meaning": "어떤 일이 이루어지기를 바라고 기다림",
+      "components": "期:기약할 기 | 待:기다릴 대",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "期約",
+      "reading": "기약",
+      "meaning": "어떤 때나 일을 미리 정하여 약속함",
+      "components": "期:기약할 기 | 約:맺을 약",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "期限",
+      "reading": "기한",
+      "meaning": "미리 정해 놓은 시기적 한계",
+      "components": "期:기약할 기 | 限:한할 한",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "期末",
+      "reading": "기말",
+      "meaning": "일정한 기간의 끝",
+      "components": "期:기약할 기 | 末:끝 말",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "乘",
+      "reading": "승",
+      "meaning": "타다",
+      "components": "乘:탈 승",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "乘車",
+      "reading": "승차",
+      "meaning": "차에 탐",
+      "components": "乘:탈 승 | 車:수레 차",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "乘客",
+      "reading": "승객",
+      "meaning": "차나 배 등에 탄 손님",
+      "components": "乘:탈 승 | 客:손 객",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "搭乘",
+      "reading": "탑승",
+      "meaning": "탈것에 올라탐",
+      "components": "搭:탈 탑 | 乘:탈 승",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "乘勝長驅",
+      "reading": "승승장구",
+      "meaning": "기세를 타고 거침없이 나아감",
+      "components": "乘:탈 승 | 勝:이길 승 | 長:길 장 | 驅:몰 구",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "搖",
+      "reading": "요",
+      "meaning": "흔들다",
+      "components": "搖:흔들 요",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "搖動",
+      "reading": "요동",
+      "meaning": "흔들려 움직임",
+      "components": "搖:흔들 요 | 動:움직일 동",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "搖亂",
+      "reading": "요란",
+      "meaning": "흔들고 어지럽힘",
+      "components": "搖:흔들 요 | 亂:어지러울 란",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "擾亂",
+      "reading": "요란",
+      "meaning": "시끄럽게 뒤흔들어 어지럽힘",
+      "components": "擾:시끄러울 요 | 亂:어지러울 란",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "搖之不動",
+      "reading": "요지부동",
+      "meaning": "흔들어도 움직이지 않음",
+      "components": "搖:흔들 요 | 之:갈 지 | 不:아니 불 | 動:움직일 동",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "會",
+      "reading": "회",
+      "meaning": "모이다",
+      "components": "會:모일 회",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "會談",
+      "reading": "회담",
+      "meaning": "서로 만나서 의논함",
+      "components": "會:모일 회 | 談:말씀 담",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "會計",
+      "reading": "회계",
+      "meaning": "돈이나 재산의 출납을 계산하고 기록함",
+      "components": "會:모일 회 | 計:셀 계",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "機會",
+      "reading": "기회",
+      "meaning": "어떤 일을 하기에 알맞은 때나 계기",
+      "components": "機:틀 기 | 會:모일 회",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "牽強附會",
+      "reading": "견강부회",
+      "meaning": "이치에 맞지 않는 말을 억지로 끌어다 붙임",
+      "components": "牽:끌 견 | 強:강할 강 | 附:붙을 부 | 會:모일 회",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "曾",
+      "reading": "증",
+      "meaning": "일찍 또는 이미",
+      "components": "曾:일찍 증",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "微",
+      "reading": "미",
+      "meaning": "작다 또는 희미하다",
+      "components": "微:작을 미",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "微笑",
+      "reading": "미소",
+      "meaning": "소리 없이 살짝 웃음",
+      "components": "微:작을 미 | 笑:웃을 소",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "微物",
+      "reading": "미물",
+      "meaning": "보잘것없이 작은 생물 또는 물건",
+      "components": "微:작을 미 | 物:물건 물",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "微妙",
+      "reading": "미묘",
+      "meaning": "뚜렷이 설명하기 어려울 만큼 섬세하고 묘함",
+      "components": "微:작을 미 | 妙:묘할 묘",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "隱微",
+      "reading": "은미",
+      "meaning": "겉으로 드러나지 않아 알아차리기 어려움",
+      "components": "隱:숨을 은 | 微:작을 미",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "徵",
+      "reading": "징",
+      "meaning": "부르다 또는 조짐",
+      "components": "徵:부를 징",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "徽",
+      "reading": "휘",
+      "meaning": "아름답다 또는 표지",
+      "components": "徽:아름다울 휘",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "變",
+      "reading": "변",
+      "meaning": "변하다",
+      "components": "變:변할 변",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "變化",
+      "reading": "변화",
+      "meaning": "성질이나 모습이 달라짐",
+      "components": "變:변할 변 | 化:될 화",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "變動",
+      "reading": "변동",
+      "meaning": "상태나 상황이 바뀌어 움직임",
+      "components": "變:변할 변 | 動:움직일 동",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "變數",
+      "reading": "변수",
+      "meaning": "여러 값을 취할 수 있는 수 또는 변화 요인",
+      "components": "變:변할 변 | 數:셀 수",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "朝變夕改",
+      "reading": "조변석개",
+      "meaning": "아침에 바꾸고 저녁에 고칠 만큼 자주 바뀜",
+      "components": "朝:아침 조 | 變:변할 변 | 夕:저녁 석 | 改:고칠 개",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "責",
+      "reading": "책",
+      "meaning": "꾸짖다 또는 책임을 지우다",
+      "components": "責:꾸짖을 책",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "叱責",
+      "reading": "질책",
+      "meaning": "잘못을 따져 꾸짖음",
+      "components": "叱:꾸짖을 질 | 責:꾸짖을 책",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "問責",
+      "reading": "문책",
+      "meaning": "잘못에 대한 책임을 물음",
+      "components": "問:물을 문 | 責:꾸짖을 책",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "責任",
+      "reading": "책임",
+      "meaning": "맡아서 해야 할 의무 또는 그 결과를 감당함",
+      "components": "責:꾸짖을 책 | 任:맡길 임",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "積",
+      "reading": "적",
+      "meaning": "쌓다",
+      "components": "積:쌓을 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "績",
+      "reading": "적",
+      "meaning": "길쌈 또는 이룬 성과",
+      "components": "績:길쌈 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "蹟",
+      "reading": "적",
+      "meaning": "발자취 또는 자취",
+      "components": "蹟:자취 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "債",
+      "reading": "채",
+      "meaning": "빚",
+      "components": "債:빚 채",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "蓄積",
+      "reading": "축적",
+      "meaning": "모아서 쌓음",
+      "components": "蓄:모을 축 | 積:쌓을 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "成績",
+      "reading": "성적",
+      "meaning": "일을 이루어 낸 결과나 학업 평가 결과",
+      "components": "成:이룰 성 | 績:길쌈 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "功績",
+      "reading": "공적",
+      "meaning": "공로와 이룬 업적",
+      "components": "功:공 공 | 績:길쌈 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "行蹟",
+      "reading": "행적",
+      "meaning": "지나온 활동과 발자취",
+      "components": "行:다닐 행 | 蹟:자취 적",
+      "example": "",
+      "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "負債",
+      "reading": "부채",
+      "meaning": "갚아야 하는 빚",
+      "components": "負:질 부 | 債:빚 채",
+      "example": "",
+      "lesson": "10주차 2차시"
     }
   ],
   "removeOnce": [
