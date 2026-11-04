@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "한국의 한자와 한자어 — 9·10주차",
-  "description": "9·10주차 1·2차시 교재의 별도 표기된 한자어·낱자와 어휘 예시 수록. 한문 본문·시구 제외. 뜻은 학습용 풀이로 보충.",
+  "description": "9주차 및 10주차 1·2차시 교재에서 별도로 제시된 한자어·낱자만 수록. 본문 한문 문장·시구는 제외하고 뜻은 학습용으로 보충.",
   "words": [
     {
       "hanja": "過去",
@@ -1194,6 +1194,30 @@
       "components": "負:질 부 | 債:빚 채",
       "example": "",
       "lesson": "10주차 2차시"
+    },
+    {
+      "hanja": "悵",
+      "reading": "창",
+      "meaning": "실망하거나 슬퍼하다",
+      "components": "悵:슬퍼할 창",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "儕",
+      "reading": "제",
+      "meaning": "동료, 같은 무리",
+      "components": "儕:동료 제",
+      "example": "",
+      "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "遼",
+      "reading": "요",
+      "meaning": "멀다",
+      "components": "遼:멀 요",
+      "example": "",
+      "lesson": "10주차 1차시"
     }
   ],
   "removeOnce": [
