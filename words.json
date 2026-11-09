@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "title": "한국의 한자와 한자어 — 9·10주차",
-  "description": "9·10주차 1·2차시 교재의 독립된 한자어 및 한자와 유사 한자 비교 항목. 본문 문장 제외. 뜻은 학습용 풀이로 보충.",
+  "title": "한국의 한자와 한자어 — 9·10·11주차",
+  "description": "9·10주차 1·2차시 및 11주차 1차시 교재의 독립된 한자어 및 한자와 유사 한자 비교 항목. 본문 문장 제외. 뜻은 학습용 풀이로 보충.",
   "words": [
     {
       "hanja": "過去",
@@ -1194,6 +1194,302 @@
       "components": "遼:멀 요",
       "example": "",
       "lesson": "10주차 1차시"
+    },
+    {
+      "hanja": "貧",
+      "reading": "빈",
+      "meaning": "가난함",
+      "components": "貧:가난할 빈",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "貧困",
+      "reading": "빈곤",
+      "meaning": "생활이 가난하고 어려움",
+      "components": "貧:가난할 빈 | 困:곤할 곤",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "貧富",
+      "reading": "빈부",
+      "meaning": "가난함과 부유함",
+      "components": "貧:가난할 빈 | 富:부유할 부",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "貧賤",
+      "reading": "빈천",
+      "meaning": "가난하고 사회적 지위가 낮음",
+      "components": "貧:가난할 빈 | 賤:천할 천",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "貧弱",
+      "reading": "빈약",
+      "meaning": "가난하고 약하거나 내용이 보잘것없음",
+      "components": "貧:가난할 빈 | 弱:약할 약",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "愚",
+      "reading": "우",
+      "meaning": "어리석음",
+      "components": "愚:어리석을 우",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "愚鈍",
+      "reading": "우둔",
+      "meaning": "어리석고 둔함",
+      "components": "愚:어리석을 우 | 鈍:둔할 둔",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "愚昧",
+      "reading": "우매",
+      "meaning": "어리석고 사리에 어두움",
+      "components": "愚:어리석을 우 | 昧:어두울 매",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "愚公移山",
+      "reading": "우공이산",
+      "meaning": "꾸준히 노력하면 어려운 일도 이룰 수 있다는 뜻",
+      "components": "愚:어리석을 우 | 公:공평할 공 | 移:옮길 이 | 山:뫼 산",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "愚問賢答",
+      "reading": "우문현답",
+      "meaning": "어리석은 질문에 현명하게 대답함",
+      "components": "愚:어리석을 우 | 問:물을 문 | 賢:어질 현 | 答:대답 답",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "戱",
+      "reading": "희",
+      "meaning": "놀거나 장난함",
+      "components": "戱:놀 희",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "戱弄",
+      "reading": "희롱",
+      "meaning": "말이나 행동으로 놀리거나 짓궂게 대함",
+      "components": "戱:놀 희 | 弄:희롱할 롱",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "戱曲",
+      "reading": "희곡",
+      "meaning": "무대에서 공연하도록 쓴 연극의 대본",
+      "components": "戱:놀 희 | 曲:굽을 곡",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "弄",
+      "reading": "롱",
+      "meaning": "희롱하거나 가지고 놂",
+      "components": "弄:희롱할 롱",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "弄談",
+      "reading": "농담",
+      "meaning": "장난으로 하는 말",
+      "components": "弄:희롱할 롱 | 談:말씀 담",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "嘲弄",
+      "reading": "조롱",
+      "meaning": "비웃거나 놀림",
+      "components": "嘲:비웃을 조 | 弄:희롱할 롱",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適",
+      "reading": "적",
+      "meaning": "알맞거나 적합함",
+      "components": "適:맞을 적",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適當",
+      "reading": "적당",
+      "meaning": "정도나 조건이 알맞음",
+      "components": "適:맞을 적 | 當:마땅 당",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適切",
+      "reading": "적절",
+      "meaning": "상황이나 목적에 꼭 알맞음",
+      "components": "適:맞을 적 | 切:끊을 절",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適性",
+      "reading": "적성",
+      "meaning": "개인에게 알맞은 성질이나 능력",
+      "components": "適:맞을 적 | 性:성품 성",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適者生存",
+      "reading": "적자생존",
+      "meaning": "환경에 잘 적응한 개체가 살아남는다는 원리",
+      "components": "適:맞을 적 | 者:놈 자 | 生:날 생 | 存:있을 존",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "適材適所",
+      "reading": "적재적소",
+      "meaning": "알맞은 인재를 알맞은 자리에 씀",
+      "components": "適:맞을 적 | 材:재목 재 | 適:맞을 적 | 所:바 소",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "接",
+      "reading": "접",
+      "meaning": "이어 붙이거나 맞닿음",
+      "components": "接:이을 접",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "接續",
+      "reading": "접속",
+      "meaning": "서로 이어지거나 연결함",
+      "components": "接:이을 접 | 續:이을 속",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "接木",
+      "reading": "접목",
+      "meaning": "식물의 가지나 싹을 다른 나무에 이어 붙임",
+      "components": "接:이을 접 | 木:나무 목",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "接觸",
+      "reading": "접촉",
+      "meaning": "서로 닿거나 관계를 맺음",
+      "components": "接:이을 접 | 觸:닿을 촉",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "應接",
+      "reading": "응접",
+      "meaning": "손님을 맞아 접대함",
+      "components": "應:응할 응 | 接:이을 접",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "接近",
+      "reading": "접근",
+      "meaning": "가까이 다가감",
+      "components": "接:이을 접 | 近:가까울 근",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "負",
+      "reading": "부",
+      "meaning": "짐을 지거나 (승부에서) 짐",
+      "components": "負:질 부",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "負擔",
+      "reading": "부담",
+      "meaning": "맡아서 지는 책임이나 의무·무게",
+      "components": "負:질 부 | 擔:멜 담",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "負傷",
+      "reading": "부상",
+      "meaning": "몸에 상처를 입음",
+      "components": "負:질 부 | 傷:다칠 상",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "勝負",
+      "reading": "승부",
+      "meaning": "이김과 짐 또는 이기고 지는 일",
+      "components": "勝:이길 승 | 負:질 부",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "決",
+      "reading": "결",
+      "meaning": "결단하거나 결정함",
+      "components": "決:결단할 결",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "決心",
+      "reading": "결심",
+      "meaning": "어떤 일을 하기로 마음을 정함",
+      "components": "決:결단할 결 | 心:마음 심",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "決定",
+      "reading": "결정",
+      "meaning": "어떤 일을 확정하여 정함",
+      "components": "決:결단할 결 | 定:정할 정",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "決斷",
+      "reading": "결단",
+      "meaning": "판단하여 단호하게 결정함",
+      "components": "決:결단할 결 | 斷:끊을 단",
+      "example": "",
+      "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "速戰速決",
+      "reading": "속전속결",
+      "meaning": "빠르게 싸우고 빠르게 일을 끝냄",
+      "components": "速:빠를 속 | 戰:싸움 전 | 速:빠를 속 | 決:결단할 결",
+      "example": "",
+      "lesson": "11주차 1차시"
     }
   ],
   "removeOnce": [
