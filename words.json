@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "한국의 한자와 한자어 — 9·10·11주차",
-  "description": "9·10주차 1·2차시 및 11주차 1차시 교재의 독립된 한자어 및 한자와 유사 한자 비교 항목. 본문 문장 제외. 뜻은 학습용 풀이로 보충.",
+  "description": "9·10·11주차 1·2차시 교재의 독립된 한자어 및 한자와 유사 한자 비교 항목. 본문 문장 제외. 뜻은 학습용 풀이로 보충.",
   "words": [
     {
       "hanja": "過去",
@@ -1490,6 +1490,286 @@
       "components": "速:빠를 속 | 戰:싸움 전 | 速:빠를 속 | 決:결단할 결",
       "example": "",
       "lesson": "11주차 1차시"
+    },
+    {
+      "hanja": "放",
+      "reading": "방",
+      "meaning": "놓아주거나 풀어 줌",
+      "components": "放:놓을 방",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "追放",
+      "reading": "추방",
+      "meaning": "어떤 사람을 강제로 쫓아냄",
+      "components": "追:쫓을 추 | 放:놓을 방",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "釋放",
+      "reading": "석방",
+      "meaning": "가두어 두었던 사람을 풀어 줌",
+      "components": "釋:풀 석 | 放:놓을 방",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "放置",
+      "reading": "방치",
+      "meaning": "돌보거나 처리하지 않고 내버려 둠",
+      "components": "放:놓을 방 | 置:둘 치",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "放學",
+      "reading": "방학",
+      "meaning": "학교에서 일정 기간 수업을 쉬는 일",
+      "components": "放:놓을 방 | 學:배울 학",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "異",
+      "reading": "이",
+      "meaning": "다르거나 특이함",
+      "components": "異:다를 이",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "異常",
+      "reading": "이상",
+      "meaning": "보통과 다르거나 정상적이지 않음",
+      "components": "異:다를 이 | 常:떳떳할 상",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "異見",
+      "reading": "이견",
+      "meaning": "서로 다른 의견",
+      "components": "異:다를 이 | 見:볼 견",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "異質",
+      "reading": "이질",
+      "meaning": "성질이나 특성이 다름",
+      "components": "異:다를 이 | 質:바탕 질",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "特異",
+      "reading": "특이",
+      "meaning": "보통과 다르게 특별함",
+      "components": "特:특별할 특 | 異:다를 이",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "翼",
+      "reading": "익",
+      "meaning": "새나 곤충의 날개",
+      "components": "翼:날개 익",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "冀",
+      "reading": "기",
+      "meaning": "바라거나 희망함",
+      "components": "冀:바랄 기",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "忘",
+      "reading": "망",
+      "meaning": "잊다",
+      "components": "忘:잊을 망",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "忘却",
+      "reading": "망각",
+      "meaning": "기억에서 잊어버림",
+      "components": "忘:잊을 망 | 却:물리칠 각",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "寤寐不忘",
+      "reading": "오매불망",
+      "meaning": "자나 깨나 잊지 못함",
+      "components": "寤:잠 깰 오 | 寐:잘 매 | 不:아니 불 | 忘:잊을 망",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "背恩忘德",
+      "reading": "배은망덕",
+      "meaning": "은혜를 저버리고 고마움을 잊음",
+      "components": "背:등 배 | 恩:은혜 은 | 忘:잊을 망 | 德:덕 덕",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "刻骨難忘",
+      "reading": "각골난망",
+      "meaning": "입은 은혜가 뼈에 새겨진 듯 잊히지 않음",
+      "components": "刻:새길 각 | 骨:뼈 골 | 難:어려울 난 | 忘:잊을 망",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "忙",
+      "reading": "망",
+      "meaning": "바쁘다",
+      "components": "忙:바쁠 망",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "妄",
+      "reading": "망",
+      "meaning": "망령되거나 분수에 맞지 않음",
+      "components": "妄:망령될 망",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "許",
+      "reading": "허",
+      "meaning": "허락하거나 허용함",
+      "components": "許:허락할 허",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "許諾",
+      "reading": "허락",
+      "meaning": "청하는 일을 좋다고 받아들임",
+      "components": "許:허락할 허 | 諾:허락할 낙",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "許可",
+      "reading": "허가",
+      "meaning": "요청이나 행위를 허락함",
+      "components": "許:허락할 허 | 可:옳을 가",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "許容",
+      "reading": "허용",
+      "meaning": "받아들여 용납함",
+      "components": "許:허락할 허 | 容:얼굴 용",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "許多",
+      "reading": "허다",
+      "meaning": "수량이나 종류가 매우 많음",
+      "components": "許:허락할 허 | 多:많을 다",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "返",
+      "reading": "반",
+      "meaning": "되돌아가거나 돌려보냄",
+      "components": "返:돌이킬 반",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "返納",
+      "reading": "반납",
+      "meaning": "빌리거나 받은 것을 되돌려 줌",
+      "components": "返:돌이킬 반 | 納:들일 납",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "返送",
+      "reading": "반송",
+      "meaning": "보낸 물건이나 우편물을 되돌려 보냄",
+      "components": "返:돌이킬 반 | 送:보낼 송",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "返還",
+      "reading": "반환",
+      "meaning": "빌리거나 받은 것을 원래 소유자에게 돌려줌",
+      "components": "返:돌이킬 반 | 還:돌아올 환",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "返戾",
+      "reading": "반려",
+      "meaning": "제출된 서류 등을 받아들이지 않고 돌려보냄",
+      "components": "返:돌이킬 반 | 戾:어그러질 려",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "悲",
+      "reading": "비",
+      "meaning": "슬프다",
+      "components": "悲:슬플 비",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "悲慟",
+      "reading": "비통",
+      "meaning": "매우 슬프고 마음이 아픔",
+      "components": "悲:슬플 비 | 慟:서러워할 통",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "悲哀",
+      "reading": "비애",
+      "meaning": "슬픔과 서러움",
+      "components": "悲:슬플 비 | 哀:슬플 애",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "悲慘",
+      "reading": "비참",
+      "meaning": "슬프고 참혹함",
+      "components": "悲:슬플 비 | 慘:참혹할 참",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "悲劇",
+      "reading": "비극",
+      "meaning": "슬프거나 불행한 결말을 다룬 극 또는 비참한 일",
+      "components": "悲:슬플 비 | 劇:심할 극",
+      "example": "",
+      "lesson": "11주차 2차시"
+    },
+    {
+      "hanja": "喜劇",
+      "reading": "희극",
+      "meaning": "웃음을 자아내는 사건을 중심으로 꾸민 극",
+      "components": "喜:기쁠 희 | 劇:심할 극",
+      "example": "",
+      "lesson": "11주차 2차시"
     }
   ],
   "removeOnce": [
